@@ -23,6 +23,7 @@ jobs:
         command: flake8 --ignore "N801, E203, E266, E501, W503, F812, E741, N803,
           N802, N806" minitorch/ tests/ project/; mypy minitorch/*
         timeout: 10
+        max-score: 10
     - name: Task 0.1
       id: task-0-1
       uses: classroom-resources/autograding-command-grader@v1
